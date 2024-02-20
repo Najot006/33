@@ -81,8 +81,8 @@ export default function Sidebar() {
       <div className={styles.user}>
         <Image src="/noavatar.jpg" className={styles.userImage} alt="avatar" width="50" height="50"/>
         <div className={styles.userDetail}>
-          <span className={styles.username}>John Doe</span>
-          <span className={styles.userTitle}>Administrator</span>
+          <span className={styles.username}>Asilbek Tojiqulov</span>
+          <span className={styles.userTitle}>Developer</span>
         </div>
       </div>
       <h1>Sidebar</h1>

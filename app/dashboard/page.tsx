@@ -1,9 +1,25 @@
-import React from 'react'
-
+"use client"
+import React from "react";
+import styles from "../ui/dashboard/dashboard.module.css";
+import Card from "../ui/dashboard/card/card";
+import Transactions from "../ui/transactions/transactions";
+import Chart from "../ui/dashboard/chart/chart";
+import RightBar from "../ui/dashboard/rightBar/rightBar";
 export default function Dashboard() {
   return (
-    <div>
-        <h1>Dashboard</h1>
+    <div className={styles.wrapper}>
+      <div className={styles.main}>
+        <div className={styles.cards}>
+            <Card/>
+            <Card/>
+            <Card/>
+        </div>
+        <Transactions/>
+        <Chart/>
+      </div>
+      <div className={styles.side}>
+        <RightBar/>
+      </div>
     </div>
-  )
+  );
 }
